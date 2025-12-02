@@ -1,0 +1,7 @@
+    1  rm ~/.bash_history
+    2  history -w
+    3  cd ~/Desktop/cs149
+    4  mkdir WS_bonus
+    5  cd WS_bonus
+    6  wget -O out.pdf https://tinyurl.com/yy94jltt
+    7  history > cmds.log

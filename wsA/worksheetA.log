@@ -1,0 +1,47 @@
+    1  rm ~/.bash_history
+    2  history -w
+    3  history
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir cs149 ; cd cs149
+    8  date
+    9  pwd
+   10  cd ~
+   11  cd Desktop/cs149
+   12  ls -latr ; mkdir wsA ; cd wsA
+   13  ls -latr
+   14  echo $?
+   15  man ps
+   16  ps aux
+   17  top
+   18  wget https://github.com/torvalds/linux/archive/master.zip
+   19  unzip master.zip
+   20  cd linux-master
+   21  pwd
+   22  alias l='ls -latr'
+   23  l
+   24  find . -name mem.c
+   25  find . -name mem.c | xargs head
+   26  find . -name mem.c | xargs grep 86
+   27  cd ..
+   28  pwd
+   29  pstree
+   30  ps -a -f -x
+   31  ps -a -f -x | more
+   32  top
+   33  man kill
+   34  echo $?
+   35  echo $$
+   36  cd ~/Desktop/ 
+   37  cd cs149 
+   38  cd wsA  
+   39  ls | wc 
+   40  ls | sort 
+   41  ls | sort | wc 
+   42  ls -latr /bin/ > a.out 
+   43  cat a.out | more 
+   44  strace ls
+   45  du -sh .
+   46  df -i
+   47  history > worksheetA.log
