@@ -1,5 +1,52 @@
-Sadiya Rahman
-CS 149
-Worksheet 1 Bonus
-12/02/2025
-
+    1  rm ~/.bash_history
+    2  history -w
+    3  cd ~/Desktop/cs149
+    4  mkdir WS_bonus
+    5  cd WS_bonus
+    6  wget -O out.pdf https://tinyurl.com/yy94jltt
+    7  history > cmds.log
+    8  cd ~
+    9  git clone git://g.csail.mit.edu/xv6-labs-2023
+   10  cd xv6-labs-2023
+   11  nano user/sleep.c
+   12  nano Makefile
+   13  make qemu
+   14  cp ~/xv6-labs-2023/user/sleep.c ~/Desktop/cs149/WS_bonus/
+   15  cd ~/Desktop/cs149/WS_bonus
+   16  nano worksheet1.log
+   17  cd ~/Desktop/cs149
+   18  git init
+   19  git add .
+   20  git commit -m "WS_bonus completed"
+   21  git config --global user.email "sadiya.rahman@sjsu.edu"
+   22  git config --global user.name "Sadiya Rahman"
+   23  git commit -m "WS_bonus completed"
+   24  git remote add origin https://github.com/SadiyaRa/cs149.git
+   25  git push -u origin master
+   26  rm wsA/master.zip
+   27  git rm --cached wsA/master.zip
+   28  git commit -m "Remove large ZIP file"
+   29  git push -u origin master
+   30  git filter-branch --force --index-filter "git rm --cached --ignore-unmatch wsA/master.zip" --prune-empty --tag-name-filter cat -- --all
+   31  rm -rf .git/refs/original/
+   32  git reflog expire --expire=now --all
+   33  git gc --prune=now --aggressive
+   34  git push --force origin master
+   35  cd WS_bonus
+   36  ls -latr
+   37  git add sleep.c worksheet1.log
+   38  git commit -m "Bonus: sleep program + worksheet1.log"
+   39  git push
+   40  git push --set-upstream origin master
+   41  cd ~/Desktop/cs149
+   42  mkdir WS1
+   43  cd WS1
+   44  wget -O out.pdf https://tinyurl.com/yy94jltt
+   45  ls -latr
+   46  history > cmds.log
+   47  ls -latr
+   48  git add cmds.log
+   49  git commit -m "Added cmds.log for Worksheet 1"
+   50  git push
+   51  cd ~/Desktop/cs149/WS_bonus
+   52  history > worksheet1.log
