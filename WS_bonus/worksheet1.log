@@ -50,3 +50,16 @@
    50  git push
    51  cd ~/Desktop/cs149/WS_bonus
    52  history > worksheet1.log
+   53  head worksheet1.log
+   54  git add worksheet1.log
+   55  git commit -m "Updated worksheet1.log with correct history"
+   56  git push
+   57  cd ~/Desktop/cs149/WS_bonus
+   58  git add worksheet1.log
+   59  git commit -m "Updated worksheet1.log with full history"
+   60  cd ~/xv6-labs-2023
+   61  nano Makefile
+   62  cd ~/xv6-labs-2023
+   63  make clean
+   64  make qemu
+   65  history > worksheet1.log
